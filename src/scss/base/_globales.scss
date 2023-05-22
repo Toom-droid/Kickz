@@ -1,0 +1,50 @@
+
+// Globales //
+
+// Html, *** y Body //
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body{
+    position: relative;
+    // overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: $fuente;
+    overflow-x: hidden;
+    &.no-scroll{
+        overflow-y: hidden;
+    }
+}
+
+// h1,h2,h3 y Parrafos //
+p{
+    font-size: 2rem;
+    color: black;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+// Imagenes //
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}

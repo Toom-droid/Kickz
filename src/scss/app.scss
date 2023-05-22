@@ -1,0 +1,17 @@
+// Globales y Utilidades //
+@import 'base/variables';
+@import 'base/ayudas';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/normalize';
+
+// Layouts //
+@import 'layouts/header';
+@import 'layouts/sign';
+@import 'layouts/cart';
+@import 'layouts/products';
+@import 'layouts/brand';
+@import 'layouts/footer';
+@import 'layouts/product';
+@import 'layouts/buy';
+@import 'layouts/finalize';

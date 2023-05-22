@@ -1,0 +1,218 @@
+.buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem auto 0 auto;
+    gap: 5rem;
+    @include tablet{
+        width: 90%;
+    }
+    @include desktop{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: normal;
+    }
+}
+.products-buy{
+    grid-column: 1/2;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: .5rem;
+    border-radius: 1rem;
+    @include tablet{
+        padding: 2rem;
+    }
+    .product-row1,
+    .product-row2,
+    .product-row3,
+    .product-row4{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+        padding: 1rem 0rem;
+        p{
+            font-size: 1.7rem;
+            font-weight: 700;
+        }
+        .p-name{
+            font-size: 1.8rem;
+            font-weight: 500;
+            @include tablet{
+                font-size: 2.2rem;
+                font-weight: 500;
+            }
+        }
+        .td-img{
+            img{
+                width: 8rem;
+                height: 8rem;
+                @include tablet{
+                    width: 15rem;
+                    height: 15rem;
+                }
+            } 
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            @include tablet{
+                gap: 5rem;
+            }
+        }
+        .div-pqs{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+            width:  340px;
+            @include tablet{
+                gap: 14rem;
+                width:  340px;
+            }
+            @include desktop{
+                width:  610px;
+                gap: 19.55rem;
+            }
+        }
+        .td-sub{
+            visibility: hidden;
+            height: 0rem;
+            width: 0rem;
+            display: none;
+            @include desktop{
+                visibility: visible;
+                width: auto;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+        h3{
+            font-size: 2rem;
+            margin: .5rem;
+        }
+        .pas{
+            display: flex;
+            gap: 2rem;
+            @include tablet{
+                gap: 10rem;
+            }
+            @include desktop{
+                gap: 15rem;
+            }
+            .sub-title{
+                visibility: hidden;
+                height: 0rem;
+                width: 0rem;
+                display: none;
+                @include desktop{
+                    visibility: visible;
+                    width: auto;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+        tr{
+            .pro{
+                width: 50rem;
+                text-align: start;
+            }
+        }
+    }
+}
+.buy-sign{
+    background-color:#F5F5F5;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: 30rem;
+    &.moreH{
+        height: auto;
+    }
+    .buy-sign-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+        &.no-border{
+            border: none;
+        }
+        h1{
+            font-size: 2rem;
+            margin: 1rem;
+        }
+        .summary{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .buy-sign-sub,
+        .buy-sign-total{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            p{
+                margin: .5rem 0;
+            }
+            .sub-p{
+                font-size: 1.5rem;
+            }
+            .total-p{
+                font-size: 2.2rem;
+            }
+            .sign-sub{
+                font-size: 1.5rem;
+            }
+            .sign-sub,
+            .sign-total{
+                font-weight: 700;
+            }
+        }
+    }
+    .buy-sign-button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        .buy-button{
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+}
+.free-fees{
+    background-color:#F5F5F5;
+    height: 5rem;
+    display: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    @include desktop{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    p{
+        font-size: 1.7rem;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.89);
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    display: none;
+}

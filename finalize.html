@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4738A7">
+    <meta name="description" content="Shop the latest Nike sneakers at our online store. Find a wide selection of premium athletic shoes for men, women, and kids. Explore our collection today and experience the perfect blend of style and performance.">
+    <title>Finalize Purchase</title>
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="build/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="build/img/favicon/site.webmanifest">
+</head>
+<body class="helper-footer2">
+
+    <header class="header">
+        <div class="brand">
+            <a class="logo-link" href="index.html"><img src="build/img/logo.svg" alt="logo KICKZ" loading="lazy"></a>
+        </div>
+        <div class="free-fees">
+            <p>Shipping to the whole country and installments without interest</p>
+        </div>
+    </header>
+
+
+    <main class="buy finalize-buy">
+        <section class="products-buy">
+            <div class="formulary">
+                <div class="form-option act email-option">
+                    <div class="email">
+                        <p>1- EMAIL</p>
+                        <div class="error-container error-container-email"></div>
+                        <img src="build/img/down-arrow.svg" id="email-down" class="down-arrow" alt="Down Arrow" loading="lazy">
+                    </div>
+                    <div class="opt hidden emailOpt">
+                        <div class="input-container">
+                        <input type="email" name="email" id="email" class="email-input" placeholder="Your Mail">
+                        </div>
+                        <button class="buy-button continue">CONTINUE</button>
+                    </div>
+                </div>
+                <div class="form-option personal-option">
+                    <div class="personal">
+                        <p>2- PERSONAL INFORMATION</p>
+                        <div class="error-container error-container-personal"></div>
+                        <img src="build/img/down-arrow.svg" id="personal-down" class="down-arrow" alt="Down Arrow" loading="lazy">
+                    </div>
+                    <div class="opt personalOpt hidden">
+                        <div class="names">
+                            <div class="label-input">
+                                <label for="Name">Name:</label>
+                                <input class="personal-name" type="text" placeholder="Name" id="name">
+                            </div>
+                            <div class="label-input">
+                                <label for="surname">Surname:</label>
+                                <input class="personal-surname" type="text" placeholder="Surname" id="surname">
+                            </div>
+                        </div>
+                        <div class="numbers">
+                            <div class="label-input">
+                                <label for="ID">ID:</label>
+                                <input class="personal-dni" type="number" min="1"  placeholder="ID" id="ID">
+                            </div>
+                            <div class="label-input">
+                                <label for="Phone">Phone Number:</label>
+                                <input class="personal-phone" type="number" min="1"   placeholder="Phone Number" name="Phone">
+                            </div>
+
+                        </div>
+                        <button class="buy-button continue2">CONTINUE</button>
+                    </div>
+                </div>
+                <div class="form-option destination-option">
+                    <div class="destination">
+                        <p>3- DESTINATION</p>
+                        <div class="error-container error-container-destination"></div>
+                        <img src="build/img/down-arrow.svg" id="destination-down" class="down-arrow" alt="Down Arrow" loading="lazy">
+                    </div>
+                    <div class="destinationOpt hidden opt">
+                        <div class="streets">
+                            <div class="label-input">
+                                <label for="state">State:</label>
+                                <input class="destination-state" type="text" name="state" id="state" placeholder="State">
+                            </div>
+                            <div class="label-input">
+                                <label for="street">Street:</label>
+                                <input class="destination-street" type="text" name="street" id="street" placeholder="Street">
+                            </div>
+                        </div>
+
+                        <div class="neigh">
+                            <div class="label-input">
+                                <label for="neigh">Neighborhood:</label>
+                                <input class="destination-neigh" type="text" name="Neighborhood" id="neigh" placeholder="Neighborhood">
+                            </div>
+                            <div class="label-input">
+                                <label for="streetn">Street Number:</label>
+                                <input class="destination-number" type="text" name="streetn" id="streetn" placeholder="Street Number">
+                            </div>
+                        </div>
+
+                        <button class="buy-button continue3">CONTINUE</button>
+                    </div>
+                </div>
+
+                <div class="form-option payment-option">
+                    <div class="payment">
+                        <p>4- PAYMENT</p>
+                        <div class="error-container error-container-payment"></div>
+                        <img src="build/img/down-arrow.svg" id="payment-down" class="down-arrow" alt="Down Arrow" loading="lazy">
+                    </div>
+                    <div class="paymentOpt hidden opt">
+                        <div class="card">
+                            <div class="card-data">
+                                <div class="label-input">
+                                    <label for="numberC">Card Number:</label>
+                                    <input class="payment-number" type="number" min="1"   name="number" id="numberC" placeholder="Card Number">
+                                </div>
+                                <div class="label-input">
+                                    <label for="code">Security Code:</label>
+                                    <input class="payment-code" type="number"   min="1" name="code" id="code" placeholder="Security Code">
+                                </div>
+                                <div class="label-input">
+                                    <label for="ns">Name And Surname:</label>
+                                    <input class="payment-ns" type="text" name="ns" id="ns" placeholder="Name & Surname">
+                                </div>
+                            </div>
+                            <div class="card-owner-data">
+                                <div class="label-input">
+                                    <label for="id">ID of the payer:</label>
+                                    <input class="payment-dni" type="number"  min="1" name="id" id="id" placeholder="ID">
+                                </div>
+                            </div>  
+                        </div>
+
+                        <button class="buy-button continue4">COMPLETE PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="buy-sign moreH">
+            <div class='buy-sign-text no-border'>
+                <div class="summary">
+                    <h1>SUMMARY OF PURCHASE</h1>
+                </div>
+                <div class="sign-helper">
+                </div>
+                <div class="prices">
+                    <div class="subt">
+                        <p class="subt-text">SUBTOTAL:</p>
+                        <p class="sub-p"></p>
+                    </div>
+                    <div class="ship">
+                        <p class="ship-text">SHIPPING COSTS:</p>
+                        <p class="ship-price">$ 1.500</p>
+                    </div>
+                    <div class="tot">
+                        <p class="total-text">TOTAL:</p>
+                        <p class="total-p"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

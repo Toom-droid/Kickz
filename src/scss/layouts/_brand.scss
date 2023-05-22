@@ -1,0 +1,75 @@
+.brand-section-background{
+    background-image: url(../../../build/img/who.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 40rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 4.5rem;
+        color: #F5F5F5;
+        text-shadow: 0 0 2px $negroClaro, 0 0 2px $negroClaro, 0 0 2px $negroClaro;
+        font-weight: 900;
+        @include tablet{
+            font-size: 10rem;
+        }
+        @include desktop{
+            font-size: 15rem;
+        }
+    }
+}
+.brand-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+    iframe{
+        width: 85vw;
+        height: 50vh;
+    }
+    @include tablet{
+        flex-direction: row;
+        iframe{
+            width: 50vw;
+        }
+    }
+    h2{
+        font-weight: 900;
+        margin: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        color: $negroClaro;
+        @include tablet{
+            font-size: 5rem;
+        }
+        @include desktop{
+            font-size: 7rem;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        @include tablet{
+            padding-bottom: .5rem;
+            font-size: 2rem;
+            border-bottom: 2px solid $azulOscuro;
+        }
+    }
+}
+.brand-container{
+    margin: 10rem 0 10rem 0;
+    background-color: #F5F5F5;
+    padding: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.164);
+
+}

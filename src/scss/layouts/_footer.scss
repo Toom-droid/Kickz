@@ -1,0 +1,36 @@
+.footer{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+    @include tablet{
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+    img{
+        width: 10rem;
+    }
+    .logo{
+        img{
+            width: 15rem;
+        }
+    }
+    .nav{
+        width: 20%;
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        a{
+            color: $negroClaro;
+            border-bottom: 2px solid transparent;
+            transition: .3s border-bottom ease-in-out;
+            &:hover{
+                border-color: $negroClaro;
+            }
+        }
+    }
+}

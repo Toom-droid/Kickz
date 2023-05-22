@@ -1,0 +1,278 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.brand{
+    background-color:  rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $azulOscuro;
+    img{
+        transition: .5s width ease-in-out;
+        width: 25rem;
+        margin: 1rem 0;
+    }
+    &.fix {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2147483646;
+        background-color: $blanco;
+        img{
+            width: 15rem;
+        }
+    }
+}
+.nav{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    &.fix {
+        position: fixed;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        z-index: 2147483646;
+        background-color: $blanco;
+        box-shadow: 3px 4px 2px rgba(0, 0, 0, 0.473);
+        @include desktop{
+            top: 4.5%;
+        }
+    }
+    .logo2{
+        img{
+            &:hover{
+                cursor: pointer;
+            }
+            width: 7rem;
+        }
+    }
+    .cart{
+        img{
+            &:hover{
+                cursor: pointer;
+            }
+            width: 4rem;
+        }
+    }
+    .container-enlaces{
+        display: flex;
+        flex-direction: column;
+        .enlaces{
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-right: 3rem;
+            &.open-menu{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @include desktop{
+                    flex-direction: row;
+                }
+                a{
+                    display: block;
+                }
+            }
+            .menu-ham{
+                filter: invert(100%);
+                display: block;
+                width: 4rem;
+                &:hover{
+                    cursor: pointer;
+                }
+                @include tablet{
+                    display: none;
+                }
+            }
+            a{
+                display: none;
+                color: rgba(0, 0, 0, 0.753);
+                font-weight: 700;
+                padding: 1rem;
+                border-radius: 1rem;
+                transition: .5s all;
+                @include tablet{
+                    display: flex;
+                }
+                
+                &:hover{
+                    color: $blanco;
+                    background-color: $celeste;
+                }
+            }
+        }
+    }
+}
+.slider{
+    width: 100%;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+    .sliderText{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        h1{
+            margin: auto;
+            color: rgba(0, 0, 0, 0.877);
+            font-size: 2rem;
+            width: 100%;
+            @include desktop{
+                width: 99%;
+            }
+        }
+    }
+    
+}
+.title1, 
+.title2, 
+.title3 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    top: 25%;
+    right: 100%;
+    font-size: 5rem;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.title1{
+    animation-name: anim-1;
+}
+.title2{
+    animation-name: anim-2;
+}
+.title3{
+    animation-name: anim-3;
+}
+@keyframes anim-1 {
+    0%, 8.3% { left: -100%; opacity: 0; }
+    8.3%,25% { 
+        left: 0%;
+        @include desktop{
+            left: 40%;
+        } 
+        opacity: 1; 
+    }
+    33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+    0%, 33.33% { left: -100%; opacity: 0; }
+    41.63%, 58.29% {
+            left: 0%;
+            @include desktop{
+                left: 40%;
+            } 
+            opacity: 1; 
+        }
+    66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+    0%, 66.66% { left: -100%; opacity: 0; }
+    74.96%, 91.62% {
+            left: 0%;
+            @include desktop{
+                left: 40%;
+            } 
+            opacity: 1; 
+        }
+    100% { left: 110%; opacity: 0; }
+}
+
+.slide-down{
+    height: 0rem;
+    z-index: 1000;
+    top: 60%;
+    background-color:  $blanco;
+    position: absolute;
+    transition: height .2s ease;
+    border-bottom: 1px solid $azulOscuro;
+    margin-top: 1.742rem; 
+}
+.shoes-menu{
+    z-index: 1000;
+    margin-top: .5rem;
+    transition: height .2s ease-in;
+    width: 0rem;
+    height: 0rem;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    a{
+        color: rgba(0, 0, 0, 0.753);
+    }
+    p{
+        color: rgba(0, 0, 0, 0.753);
+        opacity: 0;
+        margin: .5rem;
+        transition: opacity .7s ease-in, border .2s ease-in-out;
+        border-bottom: 2px solid transparent;
+        &:hover{
+            border-bottom: 2px solid $azulOscuro;
+            color: rgba(0, 0, 0, 0.877);
+            cursor: pointer;
+        }
+    }
+}
+.brand-menu{
+    z-index: 1000;
+
+    width: 0rem;
+    height: 0rem;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    h2{
+        color: rgba(0, 0, 0, 0.877);
+    }
+    img{
+        width: 10rem;
+    }
+}
+.location-menu{
+    z-index: 1000;
+
+    width: 0rem;
+    height: 0rem;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        color: $celeste;
+        border-bottom: 2px solid $celeste;
+    }
+    h2{
+        color: rgba(0, 0, 0, 0.877);
+    }
+}
+.opac{
+    transition: opacity .7s ease-in;
+    opacity: 0;
+}
+
+.logo-link{
+    &:hover{
+        cursor: pointer;
+    }
+}
